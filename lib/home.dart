@@ -1,6 +1,8 @@
 // ignore_for_file: prefer_const_constructors
-
 import 'package:facebook/Widgets/appBarButton.dart';
+import 'package:facebook/functions/CustomDivider.dart';
+import 'package:facebook/sections/headerButtonsSection.dart';
+import 'package:facebook/sections/statusSection.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
@@ -19,8 +21,26 @@ class Home extends StatelessWidget {
         ),
         actions: [
           //custom buttons
-          AppBarButton(buttonAction: () {print("go to search page");}, buttonIcon: Icons.search_outlined),
-          AppBarButton(buttonAction: () {print("go to message page");}, buttonIcon: Icons.message_outlined)
+          AppBarButton(
+              buttonAction: () {
+                print("go to search page");
+              },
+              buttonIcon: Icons.search_outlined),
+          AppBarButton(
+              buttonAction: () {
+                print("go to message page");
+              },
+              buttonIcon: Icons.message_outlined)
+        ],
+      ),
+      body: ListView(
+        // Status Section
+        children: [StatusSection(),
+        // divider
+        customDivider(1),
+        HeaderButtonsSection(),
+        customDivider(9)
+        
         ],
       ),
     );
