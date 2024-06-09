@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 import 'package:facebook/Widgets/appBarButton.dart';
 import 'package:facebook/functions/CustomDivider.dart';
+import 'package:facebook/sections/RoomSection.dart';
 import 'package:facebook/sections/headerButtonsSection.dart';
 import 'package:facebook/sections/statusSection.dart';
 import 'package:flutter/material.dart';
@@ -39,7 +40,8 @@ class Home extends StatelessWidget {
         // divider
         customDivider(1),
         HeaderButtonsSection(),
-        customDivider(9)
+        customDivider(9),
+        RoomSection()
         
         ],
       ),

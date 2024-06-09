@@ -38,7 +38,7 @@ class HeaderButtonsSection extends StatelessWidget {
               headerButton(Icons.photo_library, Colors.green,
                   "Photos", () {print("Photo button clicked");}),
                   customVerticalDivider(),
-                  headerButton(Icons.podcasts,Colors.blue, "Room", (){print("Room button clicked");}),
+                  headerButton(Icons.podcasts,Colors.purple, "Room", (){print("Room button clicked");}),
                   
             ],
           )),
