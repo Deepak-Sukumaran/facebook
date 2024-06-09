@@ -1,8 +1,10 @@
-import 'package:facebook/assets.dart';
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 class RoomSection extends StatelessWidget {
- 
+  const RoomSection({super.key});
+
 
   @override
   Widget build(BuildContext context) {
@@ -14,18 +16,27 @@ class RoomSection extends StatelessWidget {
             scrollDirection: Axis.horizontal,
             padding: EdgeInsets.all(8),
             children: [
-              
-              ElevatedButton.icon(style: ElevatedButton.styleFrom(elevation: 5),
-                onPressed: () {},
+              // elevatedButton
+             createRoomButton()
+            ]));
+  }
+}
+
+///created room button
+Widget createRoomButton(){
+  return  ElevatedButton.icon(
+                style: ElevatedButton.styleFrom(
+                    elevation: 10, foregroundColor: Colors.blue),
+                onPressed: () {
+                  print("create room button clicked");
+                },
                 label: Text(
-                  "Create Room",
+                  "Create \n Room",
                   style: TextStyle(color: Colors.blue),
                 ),
                 icon: Icon(
                   Icons.podcasts,
                   color: Colors.purple,
                 ),
-              )
-            ]));
-  }
+              );
 }

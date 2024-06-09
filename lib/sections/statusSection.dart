@@ -1,3 +1,4 @@
+import 'package:facebook/Widgets/Avatar.dart';
 import 'package:facebook/assets.dart';
 import 'package:flutter/material.dart';
 
@@ -7,13 +8,7 @@ class StatusSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      leading: ClipRRect(
-        borderRadius: BorderRadius.circular(50),
-        child: Image.asset(
-          davidBeckham,
-          fit: BoxFit.contain,
-        ),
-      ),
+      leading: Avatar(kyleJenner),
       //  CircleAvatar( backgroundImage: AssetImage(davidBeckham),radius: 32,backgroundColor: Colors.transparent,)
       title: TextField(
         decoration: InputDecoration(
