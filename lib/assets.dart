@@ -1,6 +1,5 @@
 // Avatars or profile picture
 
-
 String bradPit = "assets/Avatar/brad-pitt.jpg";
 String diCaprio = "assets/Avatar/actor-leonardo-dicaprio.jpg";
 String alexandraDaddrio = "assets/Avatar/alexandra daddario.jpg";
@@ -17,6 +16,15 @@ String tomHardyStory = "assets/Avatar/tomHardy story.jpg";
 String kyileStory = "assets/Avatar/Kylie-Jenner-story.jpg";
 String cillianStory = "assets/Avatar/cillian murphy story.jpg";
 
-
-
-List<String> Assets = [bradPit,diCaprio,alexandraDaddrio,kyleJenner,tomCruise, vanessa, AnadArmas, superdry, tomHardy, cilliaMurphy];
+List<String> Assets = [
+  bradPit,
+  diCaprio,
+  alexandraDaddrio,
+  kyleJenner,
+  tomCruise,
+  vanessa,
+  AnadArmas,
+  superdry,
+  tomHardy,
+  cilliaMurphy
+];

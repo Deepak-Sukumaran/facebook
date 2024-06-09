@@ -16,7 +16,7 @@ class RoomSection extends StatelessWidget {
         child: ListView(scrollDirection: Axis.horizontal, children: [
           // elevatedButton
           createRoomButton(),
-         
+
           Avatar(imagename: bradPit, displayStatus: true),
           Avatar(imagename: tomCruise, displayStatus: true),
           Avatar(imagename: tomHardy, displayStatus: true),
@@ -24,7 +24,7 @@ class RoomSection extends StatelessWidget {
           Avatar(imagename: davidBeckham, displayStatus: true),
           Avatar(imagename: cilliaMurphy, displayStatus: true),
           Avatar(imagename: vanessaProPic, displayStatus: true),
-          Avatar(imagename:superdry, displayStatus: true),
+          Avatar(imagename: superdry, displayStatus: true),
         ]));
   }
 }
@@ -32,7 +32,7 @@ class RoomSection extends StatelessWidget {
 ///created room button
 Widget createRoomButton() {
   return Padding(
-    padding: const EdgeInsets.only(bottom:5,left: 5),
+    padding: const EdgeInsets.only(bottom: 5, left: 5),
     child: ElevatedButton.icon(
       style:
           ElevatedButton.styleFrom(elevation: 10, foregroundColor: Colors.blue),
