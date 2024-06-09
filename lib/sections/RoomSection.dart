@@ -23,7 +23,7 @@ class RoomSection extends StatelessWidget {
           Avatar(imagename: alexandraDaddrio, displayStatus: true),
           Avatar(imagename: davidBeckham, displayStatus: true),
           Avatar(imagename: cilliaMurphy, displayStatus: true),
-          Avatar(imagename: vanessa, displayStatus: true),
+          Avatar(imagename: vanessaProPic, displayStatus: true),
           Avatar(imagename:superdry, displayStatus: true),
         ]));
   }

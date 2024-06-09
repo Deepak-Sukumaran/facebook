@@ -8,7 +8,7 @@ class StatusSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      leading: Avatar(imagename: kyleJenner, displayStatus: false),
+      leading: Avatar(imagename: davidBeckham, displayStatus: false),
       
       title: TextField(
         decoration: InputDecoration(

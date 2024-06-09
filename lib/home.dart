@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors
-import 'package:facebook/Widgets/appBarButton.dart';
+import 'package:facebook/Widgets/CircularButton.dart';
+
 import 'package:facebook/functions/CustomDivider.dart';
 import 'package:facebook/sections/RoomSection.dart';
 import 'package:facebook/sections/StorySection.dart';
@@ -23,12 +24,12 @@ class Home extends StatelessWidget {
         ),
         actions: [
           //custom buttons
-          AppBarButton(
+          CircularButton(
               buttonAction: () {
                 print("go to search page");
               },
-              buttonIcon: Icons.search_outlined),
-          AppBarButton(
+              buttonIcon: Icons.search_outlined,),
+          CircularButton(
               buttonAction: () {
                 print("go to message page");
               },
