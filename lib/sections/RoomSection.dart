@@ -9,7 +9,7 @@ class RoomSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
         // color: Colors.amberAccent,
         height: 60,
         width: MediaQuery.of(context).size.width,
@@ -32,7 +32,7 @@ class RoomSection extends StatelessWidget {
 ///created room button
 Widget createRoomButton() {
   return Padding(
-    padding: const EdgeInsets.only(bottom: 5,top: 5,left: 5),
+    padding: const EdgeInsets.only(bottom:5,left: 5),
     child: ElevatedButton.icon(
       style:
           ElevatedButton.styleFrom(elevation: 10, foregroundColor: Colors.blue),

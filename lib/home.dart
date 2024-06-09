@@ -2,6 +2,7 @@
 import 'package:facebook/Widgets/appBarButton.dart';
 import 'package:facebook/functions/CustomDivider.dart';
 import 'package:facebook/sections/RoomSection.dart';
+import 'package:facebook/sections/StorySection.dart';
 import 'package:facebook/sections/headerButtonsSection.dart';
 import 'package:facebook/sections/statusSection.dart';
 import 'package:flutter/material.dart';
@@ -43,6 +44,8 @@ class Home extends StatelessWidget {
         customDivider(9),
         RoomSection(),
         customDivider(9),
+        StorySection(),
+        customDivider(9)
         ],
       ),
     );

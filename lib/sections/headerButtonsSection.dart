@@ -1,10 +1,11 @@
 // ignore_for_file: prefer_const_constructors, avoid_print
 
-import 'package:facebook/functions/CustomDivider.dart';
 import 'package:facebook/functions/customVerticalDvider.dart';
 import 'package:flutter/material.dart';
 
 class HeaderButtonsSection extends StatelessWidget {
+  const HeaderButtonsSection({super.key});
+
 //  headerButton
   Widget headerButton(IconData headerIcon, Color headerButtonColor,
       String headerButtonText, void Function()? headerButtonAction) {
@@ -24,7 +25,7 @@ class HeaderButtonsSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(0),
-      child: Container(
+      child: SizedBox(
           height: 40,
           width: MediaQuery.of(context).size.width,
           // color: Colors.amber,
