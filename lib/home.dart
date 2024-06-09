@@ -41,8 +41,8 @@ class Home extends StatelessWidget {
         customDivider(1),
         HeaderButtonsSection(),
         customDivider(9),
-        RoomSection()
-        
+        RoomSection(),
+        customDivider(9),
         ],
       ),
     );
