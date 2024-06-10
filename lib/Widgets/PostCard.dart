@@ -40,15 +40,15 @@ class PostCard extends StatelessWidget {
           customDivider(1),
           HeaderButtonsSection(
             buttonone: headerFooterButton(
-                Icons.thumb_up, Colors.blueAccent, "Like", () {
+                Icons.thumb_up, Colors.grey, "Like", () {
               print("Like button clicked");
             }),
             buttontwo: headerFooterButton(
-                Icons.comment, Colors.blueAccent, "Comments", () {
+                Icons.comment, Colors.grey, "Comments", () {
               print("Comment button clicked");
             }),
             buttonthree:
-                headerFooterButton(Icons.share, Colors.blueAccent, "Share", () {
+                headerFooterButton(Icons.share, Colors.grey, "Share", () {
               print("share button clicked");
             }),
           ),

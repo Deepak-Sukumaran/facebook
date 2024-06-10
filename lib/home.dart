@@ -9,7 +9,9 @@ import 'package:facebook/sections/RoomSection.dart';
 import 'package:facebook/sections/StorySection.dart';
 import 'package:facebook/sections/headerButtonsSection.dart';
 import 'package:facebook/sections/statusSection.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -41,6 +43,7 @@ class Home extends StatelessWidget {
         ],
       ),
       body: ListView(
+        physics: ScrollPhysics(parent: BouncingScrollPhysics()),
         // Status Section
         children: [
           StatusSection(),
@@ -48,9 +51,11 @@ class Home extends StatelessWidget {
           customDivider(1),
           HeaderButtonsSection(
             buttonone: headerFooterButton(
-                Icons.video_call, Colors.redAccent, "Live", () {print("Live button clicked");}),
-            buttontwo: headerFooterButton(
-                Icons.photo, Colors.green, "Photos", () {}),
+                Icons.video_call, Colors.redAccent, "Live", () {
+              print("Live button clicked");
+            }),
+            buttontwo:
+                headerFooterButton(Icons.photo, Colors.green, "Photos", () {}),
             buttonthree: headerFooterButton(
                 Icons.podcasts, Colors.purple, "Room", () {}),
           ),
@@ -81,7 +86,8 @@ class Home extends StatelessWidget {
             postImageComments: '129k',
             postImageShares: '44k',
           ),
-          customDivider(9),   PostCard(
+          customDivider(9),
+          PostCard(
             postAvatarImage: tomHardy,
             postAvatarName: "Tom Hardy",
             verify: true,
@@ -92,7 +98,8 @@ class Home extends StatelessWidget {
             postImageComments: '29k',
             postImageShares: '14k',
           ),
-          customDivider(9),   PostCard(
+          customDivider(9),
+          PostCard(
             postAvatarImage: tomCruise,
             postAvatarName: "Tom Cruise",
             verify: true,
@@ -103,7 +110,8 @@ class Home extends StatelessWidget {
             postImageComments: '129k',
             postImageShares: '44k',
           ),
-          customDivider(9),   PostCard(
+          customDivider(9),
+          PostCard(
             postAvatarImage: bradPit,
             postAvatarName: "Brad Pit",
             verify: true,
@@ -114,7 +122,8 @@ class Home extends StatelessWidget {
             postImageComments: '129k',
             postImageShares: '44k',
           ),
-          customDivider(9),   PostCard(
+          customDivider(9),
+          PostCard(
             postAvatarImage: alexandraDaddrio,
             postAvatarName: "Alexandra Daddrio",
             verify: true,
@@ -125,7 +134,8 @@ class Home extends StatelessWidget {
             postImageComments: '129k',
             postImageShares: '244k',
           ),
-          customDivider(9),  PostCard(
+          customDivider(9),
+          PostCard(
             postAvatarImage: kyleJenner,
             postAvatarName: "Kylie Jenner",
             verify: true,
