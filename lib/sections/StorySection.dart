@@ -28,8 +28,8 @@ class StorySection extends StatelessWidget {
           ),
           StoryCard(
             labelText: "Cillian Murphy",
-            story: cillianStory,
-            storyavatar: cilliaMurphy,
+            story: cilliaMurphy,
+            storyavatar: cillianStory,
             createStoryStatus: false,
             displayBorder: true,
           ),

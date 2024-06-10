@@ -28,7 +28,9 @@ class StoryCard extends StatelessWidget {
           borderRadius: BorderRadius.circular(15),
           image: DecorationImage(image: AssetImage(story), fit: BoxFit.cover)),
       child: Stack(
-        children: [
+        children: [ Container(
+          padding: EdgeInsets.only(top: 5, left: 5),
+          child: 
           createStoryStatus == true
               ? CircularButton(
                   buttonColor: Colors.white.withOpacity(0.45),
@@ -41,8 +43,8 @@ class StoryCard extends StatelessWidget {
               : Avatar(
                   imagename: storyavatar,
                   displayStatus: false,
-                  displayBorder: displayBorder,
-                ),
+                  displayBorder: displayBorder,height: 35, width: 35,
+                ),),
           Positioned(
               bottom: 7,
               left: 10,

@@ -17,14 +17,13 @@ class RoomSection extends StatelessWidget {
           // elevatedButton
           createRoomButton(),
 
-          Avatar(imagename: bradPit, displayStatus: true),
-          Avatar(imagename: tomCruise, displayStatus: true),
-          Avatar(imagename: tomHardy, displayStatus: true),
-          Avatar(imagename: alexandraDaddrio, displayStatus: true),
-          Avatar(imagename: davidBeckham, displayStatus: true),
-          Avatar(imagename: cilliaMurphy, displayStatus: true),
-          Avatar(imagename: vanessaProPic, displayStatus: true),
-          Avatar(imagename: superdry, displayStatus: true),
+          Avatar(imagename: bradPit, displayStatus: true,height: 55,width: 55,),
+          Avatar(imagename: tomCruise, displayStatus: true,height: 55,width: 55,),
+          Avatar(imagename: tomHardy, displayStatus: true,height: 55,width: 55,),
+          Avatar(imagename: alexandraDaddrio, displayStatus: true,height: 55,width: 55,),
+          Avatar(imagename: cilliaMurphy, displayStatus: true,height: 55,width: 55,),
+          Avatar(imagename: vanessaProPic, displayStatus: true,height: 55,width: 55,),
+          Avatar(imagename: superdry, displayStatus: true,height: 55,width: 55,),
         ]));
   }
 }

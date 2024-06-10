@@ -1,25 +1,16 @@
 // ignore_for_file: prefer_const_constructors, avoid_print
 
-import 'package:facebook/functions/customVerticalDvider.dart';
 import 'package:flutter/material.dart';
 
 class HeaderButtonsSection extends StatelessWidget {
-  const HeaderButtonsSection({super.key});
+  final Widget buttonone;
+  final Widget buttontwo;
+  final Widget buttonthree;
 
-//  headerButton
-  Widget headerButton(IconData headerIcon, Color headerButtonColor,
-      String headerButtonText, void Function()? headerButtonAction) {
-    return TextButton.icon(
-        onPressed: headerButtonAction,
-        icon: Icon(
-          headerIcon,
-          color: headerButtonColor,
-        ),
-        label: Text(
-          headerButtonText,
-          style: TextStyle(color: Colors.black54),
-        ));
-  }
+  HeaderButtonsSection(
+      {required this.buttonone,
+      required this.buttontwo,
+      required this.buttonthree});
 
   @override
   Widget build(BuildContext context) {
@@ -32,15 +23,15 @@ class HeaderButtonsSection extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              headerButton(Icons.video_call, Colors.redAccent, "Live", () {
-                print("live button clicked");
-              }),
-              customVerticalDivider(),
-              headerButton(Icons.photo_library, Colors.green,
-                  "Photos", () {print("Photo button clicked");}),
-                  customVerticalDivider(),
-                  headerButton(Icons.podcasts,Colors.purple, "Room", (){print("Room button clicked");}),
-                  
+              buttonone,
+              VerticalDivider(
+                thickness: 1,
+              ),
+              buttontwo,
+              VerticalDivider(
+                thickness: 1,
+              ),
+              buttonthree
             ],
           )),
     );

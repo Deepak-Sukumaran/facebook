@@ -15,6 +15,13 @@ String tomHardy = "assets/Avatar/tom hardy.jpg";
 String tomHardyStory = "assets/Avatar/tomHardy story.jpg";
 String kyileStory = "assets/Avatar/Kylie-Jenner-story.jpg";
 String cillianStory = "assets/Avatar/cillian murphy story.jpg";
+String venom = "assets/Avatar/venom.jpg";
+String topGun = "assets/Avatar/topGun.jpg";
+String davidPost = "assets/Avatar/david post.jpeg";
+String oppenhimer = "assets/Avatar/oppenhimer.jpg";
+String kylieMet = "assets/Avatar/kylie-jenner metgala.jpg";
+String bradPost = "assets/Avatar/brad post.jpg";
+String alexandraMetGala = "assets/Avatar/alexandra-daddario-met gala.jpg";
 
 List<String> Assets = [
   bradPit,
