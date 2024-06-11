@@ -2,6 +2,7 @@
 import 'package:facebook/Widgets/CircularButton.dart';
 import 'package:facebook/Widgets/PostCard.dart';
 import 'package:facebook/Widgets/headreFooterButton.dart';
+import 'package:facebook/Widgets/suggestionSection.dart';
 import 'package:facebook/assets.dart';
 
 import 'package:facebook/functions/CustomDivider.dart';
@@ -69,18 +70,21 @@ class Home extends StatelessWidget {
             postAvatarName: "Kylie Jenner",
             verify: true,
             publishedAt: "4h",
-            postTitle: '💃🏻 metGala 2024',
+            postTitle: '💃🏻 metGala 2024   ',
             postImage: kylieMet,
             postImageLikes: '2.46M',
             postImageComments: '444k',
             postImageShares: '24k',
           ),
+          customDivider(9),
+          SuggetionSection(),
+          customDivider(9),
           PostCard(
             postAvatarImage: cillianStory,
-            postAvatarName: "Tom Hardy",
+            postAvatarName: "Cillian Murphy",
             verify: true,
             publishedAt: "44min",
-            postTitle: "💼 Oppenhimer",
+            postTitle: "💼 Oppenhimer     ",
             postImage: oppenhimer,
             postImageLikes: '1.34M',
             postImageComments: '129k',
@@ -92,7 +96,7 @@ class Home extends StatelessWidget {
             postAvatarName: "Tom Hardy",
             verify: true,
             publishedAt: "44min",
-            postTitle: "We are venom",
+            postTitle: "venom                   ",
             postImage: venom,
             postImageLikes: '1.4M',
             postImageComments: '29k',
@@ -104,7 +108,7 @@ class Home extends StatelessWidget {
             postAvatarName: "Tom Cruise",
             verify: true,
             publishedAt: "30min",
-            postTitle: "🛩 TopGun1989",
+            postTitle: "🛩 TopGun1989    ",
             postImage: topGun,
             postImageLikes: '2.84M',
             postImageComments: '129k',
@@ -116,19 +120,20 @@ class Home extends StatelessWidget {
             postAvatarName: "Brad Pit",
             verify: true,
             publishedAt: "5h",
-            postTitle: "🕶️once upon a time HollyWood",
+            postTitle: "🕶️once upon a time HollyWood   ",
             postImage: bradPost,
             postImageLikes: '1.34M',
             postImageComments: '129k',
             postImageShares: '44k',
           ),
           customDivider(9),
+
           PostCard(
             postAvatarImage: alexandraDaddrio,
             postAvatarName: "Alexandra Daddrio",
             verify: true,
             publishedAt: "30min",
-            postTitle: "🪅Met Gala",
+            postTitle: "🪅Met Gala 2024  ",
             postImage: alexandraMetGala,
             postImageLikes: '4.34M',
             postImageComments: '129k',
@@ -140,7 +145,7 @@ class Home extends StatelessWidget {
             postAvatarName: "Kylie Jenner",
             verify: true,
             publishedAt: "4h",
-            postTitle: '😍 Proud mommi',
+            postTitle: '😍 Proud mommi ',
             postImage: kyileStory,
             postImageLikes: '2.46M',
             postImageComments: '444k',

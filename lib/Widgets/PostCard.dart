@@ -107,7 +107,7 @@ class PostCard extends StatelessWidget {
 
   Widget titleSection() {
     return Container(
-      padding: EdgeInsets.only(left: 15, bottom: 5, right: 300),
+      padding: EdgeInsets.only( bottom: 5,right: 280 , left: 15),
       child: Text(
         postTitle ?? "",
         style: TextStyle(
