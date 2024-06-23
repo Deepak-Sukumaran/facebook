@@ -2,7 +2,6 @@
 
 import 'package:facebook/Widgets/Avatar.dart';
 import 'package:facebook/Widgets/CircularButton.dart';
-import 'package:facebook/assets.dart';
 import 'package:flutter/material.dart';
 
 class StoryCard extends StatelessWidget {
@@ -12,8 +11,8 @@ class StoryCard extends StatelessWidget {
   final bool? createStoryStatus;
   final bool? displayBorder;
 
-  StoryCard(
-      {required this.labelText,
+  const StoryCard(
+      {super.key, required this.labelText,
       required this.story,
       required this.storyavatar,
       this.createStoryStatus = false,
@@ -23,13 +22,13 @@ class StoryCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: 150,
-      margin: EdgeInsets.only(left: 5, right: 5, top: 10, bottom: 10),
+      margin: const EdgeInsets.only(left: 5, right: 5, top: 10, bottom: 10),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
           image: DecorationImage(image: AssetImage(story), fit: BoxFit.cover)),
       child: Stack(
         children: [ Container(
-          padding: EdgeInsets.only(top: 5, left: 5),
+          padding: const EdgeInsets.only(top: 5, left: 5),
           child: 
           createStoryStatus == true
               ? CircularButton(
@@ -50,7 +49,7 @@ class StoryCard extends StatelessWidget {
               left: 10,
               child: Text(
                 labelText ?? "N/A",
-                style: TextStyle(
+                style: const TextStyle(
                     color: Colors.white,
                     fontSize: 15,
                     fontWeight: FontWeight.w500),

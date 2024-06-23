@@ -7,15 +7,15 @@ class SuggetionSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 400,
       child: Column(
         children: [
-          ListTile(
+          const ListTile(
             title: Text("Pepole you may know"),
             trailing: Icon(Icons.more_horiz),
           ),
-          Container(
+          SizedBox(
             height: 340,
             child: ListView(
               scrollDirection: Axis.horizontal,

@@ -18,7 +18,7 @@ class PostCard extends StatelessWidget {
   final String postImageShares;
 
   const PostCard(
-      {required this.postAvatarImage,
+      {super.key, required this.postAvatarImage,
       required this.postAvatarName,
       required this.verify,
       required this.publishedAt,
@@ -74,20 +74,20 @@ class PostCard extends StatelessWidget {
               postAvatarName,
               style: TextStyle(color: Colors.grey[780]),
             ),
-            SizedBox(
+            const SizedBox(
               width: 6,
             ),
             //Blue Tick
-            verify == true ? BlueTick() : SizedBox()
+            verify == true ? const BlueTick() : const SizedBox()
           ],
         ),
         subtitle: Row(
           children: [
             Text(publishedAt ?? ""),
-            SizedBox(
+            const SizedBox(
               width: 8,
             ),
-            Icon(
+            const Icon(
               Icons.public,
               size: 14,
             ),
@@ -107,10 +107,10 @@ class PostCard extends StatelessWidget {
 
   Widget titleSection() {
     return Container(
-      padding: EdgeInsets.only( bottom: 5,right: 280 , left: 15),
+      padding: const EdgeInsets.only( bottom: 5,right: 280 , left: 15),
       child: Text(
         postTitle ?? "",
-        style: TextStyle(
+        style: const TextStyle(
             color: Colors.black, fontSize: 16, fontWeight: FontWeight.w400),
       ),
     );
@@ -127,7 +127,7 @@ class PostCard extends StatelessWidget {
   Widget footerSection() {
     return Container(
         height: 50,
-        padding: EdgeInsets.only(
+        padding: const EdgeInsets.only(
           top: 15,
           left: 15,
         ),
@@ -140,15 +140,15 @@ class PostCard extends StatelessWidget {
                   Container(
                     height: 25,
                     width: 25,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                         color: Colors.blueAccent, shape: BoxShape.circle),
-                    child: Icon(
+                    child: const Icon(
                       Icons.thumb_up,
                       color: Colors.white,
                       size: 17,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 5,
                   ),
                   displaytext(postImageLikes),
@@ -159,19 +159,19 @@ class PostCard extends StatelessWidget {
               child: Row(
                 children: [
                   displaytext(postImageComments),
-                  SizedBox(
+                  const SizedBox(
                     width: 5,
                   ),
                   displaytext("comments"),
-                  SizedBox(
+                  const SizedBox(
                     width: 15,
                   ),
                   displaytext(postImageShares),
-                  SizedBox(
+                  const SizedBox(
                     width: 5,
                   ),
                   displaytext("Shares"),
-                  SizedBox(
+                  const SizedBox(
                     width: 5,
                   ),
                   Avatar(

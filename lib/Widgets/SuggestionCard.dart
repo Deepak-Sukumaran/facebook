@@ -1,14 +1,12 @@
 import 'dart:ffi';
 
-import 'package:facebook/assets.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class SuggestionCard extends StatelessWidget {
   final String? name;
   final String? photo;
   final String? Mutual;
-  SuggestionCard({required this.name, 
+  const SuggestionCard({super.key, required this.name, 
   required this.photo, 
   required this.Mutual, 
   });
@@ -19,7 +17,7 @@ class SuggestionCard extends StatelessWidget {
       height: 300,
       color: Colors.black12,
       width: 300,
-      margin: EdgeInsets.only(left: 10, right: 10),
+      margin: const EdgeInsets.only(left: 10, right: 10),
       child: Stack(
         children: [Suggestionimage(), suggestionDetails()],
       ),
@@ -40,7 +38,7 @@ class SuggestionCard extends StatelessWidget {
                 subtitle: Text("$Mutual Mutual friends"),
               ),
               Container(
-                margin: EdgeInsets.only(left: 10),
+                margin: const EdgeInsets.only(left: 10),
                 child: Row(
                   children: [
                     Button1(
@@ -49,7 +47,7 @@ class SuggestionCard extends StatelessWidget {
                         buttonTextColor: Colors.white,
                         buttonIconColor: Colors.white,
                         buttonText: "Add friend"),
-                    SizedBox(
+                    const SizedBox(
                       width: 40,
                     ),
                     button2(
@@ -115,7 +113,7 @@ class SuggestionCard extends StatelessWidget {
   Widget Suggestionimage() {
     return Positioned(
         child: ClipRRect(
-            borderRadius: BorderRadius.only(
+            borderRadius: const BorderRadius.only(
                 topLeft: Radius.circular(10), topRight: Radius.circular(10)),
             child: Image.asset(
               photo!,

@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class CircularButton extends StatelessWidget {
   final void Function()? buttonAction;
   final IconData? buttonIcon;
@@ -10,20 +11,19 @@ class CircularButton extends StatelessWidget {
   CircularButton(
       {required this.buttonAction,
       required this.buttonIcon,
-      this.buttonIconColor = Colors.black,this.buttonColor});
+      this.buttonIconColor = Colors.black,
+      this.buttonColor});
   @override
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.all(5),
-      decoration:
-          BoxDecoration(shape: BoxShape.circle, color:buttonColor ?? Colors.grey[350]),
+      decoration: BoxDecoration(
+          shape: BoxShape.circle, color: buttonColor ?? Colors.grey[350]),
       child: IconButton(
         onPressed: buttonAction,
-        icon: Icon(
-          buttonIcon,
-          color: buttonIconColor 
-          // ?? Colors.grey[750],
-        ),
+        icon: Icon(buttonIcon, color: buttonIconColor
+            // ?? Colors.grey[750],
+            ),
         iconSize: 33,
       ),
     );

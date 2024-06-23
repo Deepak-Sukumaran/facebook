@@ -5,6 +5,6 @@ class BlueTick extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Icon(Icons.verified ,size: 18,color: Colors.blue,);
+    return const Icon(Icons.verified ,size: 18,color: Colors.blue,);
   }
 }

@@ -7,8 +7,8 @@ class HeaderButtonsSection extends StatelessWidget {
   final Widget buttontwo;
   final Widget buttonthree;
 
-  HeaderButtonsSection(
-      {required this.buttonone,
+  const HeaderButtonsSection(
+      {super.key, required this.buttonone,
       required this.buttontwo,
       required this.buttonthree});
 

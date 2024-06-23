@@ -9,7 +9,7 @@ class Avatar extends StatelessWidget {
   final double? height;
   final double? width;
   const Avatar(
-      {required this.imagename,
+      {super.key, required this.imagename,
       required this.displayStatus,
       this.displayBorder = false,
       this.height,
@@ -41,7 +41,7 @@ class Avatar extends StatelessWidget {
             shape: BoxShape.circle,
             border: displayBorder == true
                 ? Border.all(color: Colors.blueAccent, width: 2)
-                : Border()),
+                : const Border()),
         child: ClipRRect(
           child: Image.asset(
             imagename,

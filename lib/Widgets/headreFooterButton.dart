@@ -11,6 +11,6 @@ Widget headerFooterButton(IconData headerIcon, Color headerButtonColor,
         ),
         label: Text(
           headerButtonText,
-          style: TextStyle(color: Colors.black54),
+          style: const TextStyle(color: Colors.black54),
         ));
   }

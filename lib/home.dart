@@ -10,9 +10,7 @@ import 'package:facebook/sections/RoomSection.dart';
 import 'package:facebook/sections/StorySection.dart';
 import 'package:facebook/sections/headerButtonsSection.dart';
 import 'package:facebook/sections/statusSection.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -44,7 +42,7 @@ class Home extends StatelessWidget {
         ],
       ),
       body: ListView(
-        physics: ScrollPhysics(parent: BouncingScrollPhysics()),
+        physics: ScrollPhysics(parent: ClampingScrollPhysics()),
         // Status Section
         children: [
           StatusSection(),

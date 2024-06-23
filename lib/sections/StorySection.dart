@@ -7,7 +7,7 @@ class StorySection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 250,
       width: MediaQuery.of(context).size.width,
       child: ListView(
